@@ -1,0 +1,78 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "auto_update": true,
+  "hard_tabs": true,
+  "vim_mode": true,
+  "relative_line_numbers": true,
+  // "theme": "macOS Classic Dark2",
+  "theme": "Gruvbox Dark",
+  // "ui_font_size": 26,
+  // "buffer_font_size": 26,
+  "ui_font_size": 18,
+  "buffer_font_size": 18,
+  "format_on_save": "off",
+  "current_line_highlight": "gutter", // all/line/gutter
+  "scrollbar": {
+    "show": "auto"
+  },
+  "git_diff": true,
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": false
+  },
+  "ensure_final_newline_on_save": true,
+  "formatter": "language_server",
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": true
+    }
+  },
+  "soft_wrap": "editor_width",
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": true
+  },
+  "terminal": {
+  	"alternate_scroll": "off",
+  	"blinking": "terminal_controlled",
+  	"copy_on_select": false,
+  	"env": {},
+  	"font_family": null,
+  	"font_features": null,
+  	"font_size": null,
+  	"option_as_meta": false,
+  	"button": false,
+  	"shell": {},
+  	"toolbar": {
+    	"title": true
+  	},
+  	"working_directory": "current_project_directory",
+	},
+	//TUTAJ MUSZĘ OGARNAĆ CO I JAK
+	"project_panel": {
+		"button": true,
+  	"dock": "left",
+  	"git_status": true,
+  	"default_width": "N/A - width in pixels"
+	},
+	"bindings": {
+		"gd": "editor::GoToDefinition",
+		"alt-down": ["workspace::SendKeystrokes", "down down down down"],
+    "cmd-alt-c": [
+      "workspace::SendKeystrokes",
+      "cmd-shift-p copy relative path enter"
+    ],
+    "cmd-alt-r": ["workspace::SendKeystrokes", "cmd-p README enter"],
+    "shift-tab": "editor::Tab",
+    "shift-left": "pane::ActivatePrevItem",
+    "shift-right": "pane::ActivateNextItem",
+  }
+}
