@@ -1,7 +1,7 @@
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # customizowanie stylu
-exec gsettings set org.gnome.desktop.interface text-scaling-factor 1.5
+# exec gsettings set org.gnome.desktop.interface text-scaling-factor 1.5
 exec gtk-application-prefer-dark-theme = true
 exec gsettings set org.gnome.desktop.interface gtk-theme "Mint-Y-Dark-Blue"
 exec gsettings set org.gnome.desktop.interface icon-theme "Mint-Y-Sand"
@@ -20,7 +20,7 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term foot
+set $term alacritty
 # set $browser firefox
 set $browser flatpak run io.gitlab.librewolf-community
 set $filemanager nemo
@@ -268,3 +268,4 @@ gaps inner 0px
 
 default_floating_border pixel
 default_border pixel
+output eDP-1 scale 1.5
